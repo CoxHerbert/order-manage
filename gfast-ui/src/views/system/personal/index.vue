@@ -8,7 +8,7 @@
             <div class="personal-user-left">
               <el-upload
                   class=" h100 personal-user-left-upload avatar-uploader"
-                  :action="baseURL+'/api/v1/system/upload/singleImg'"
+                  :action="baseURL+'/system/upload/singleImg'"
                   :show-file-list="false"
                   :on-success="handleAvatarSuccess"
                   :data="dataParam"

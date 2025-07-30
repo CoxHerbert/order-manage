@@ -2,7 +2,7 @@ import request from '/@/utils/request'
 // 查询操作日志列表
 export function listSysOperLog(query:object) {
     return request({
-        url: '/api/v1/system/operLog/list',
+        url: '/system/operLog/list',
         method: 'get',
         params: query
     })
@@ -10,7 +10,7 @@ export function listSysOperLog(query:object) {
 // 查询操作日志详细
 export function getSysOperLog(operId:number) {
     return request({
-        url: '/api/v1/system/operLog/get',
+        url: '/system/operLog/get',
         method: 'get',
         params: {
             operId: operId.toString()
@@ -20,7 +20,7 @@ export function getSysOperLog(operId:number) {
 // 删除操作日志
 export function delSysOperLog(operIds:number[]) {
     return request({
-        url: '/api/v1/system/operLog/delete',
+        url: '/system/operLog/delete',
         method: 'delete',
         data:{
             operIds:operIds
@@ -31,7 +31,7 @@ export function delSysOperLog(operIds:number[]) {
 
 export function clearOperLog() {
     return request({
-        url: '/api/v1/system/operLog/clear',
+        url: '/system/operLog/clear',
         method: 'delete',
     })
 }
